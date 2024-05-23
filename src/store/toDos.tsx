@@ -13,7 +13,7 @@ export type Todo = {
 
 export type TodosContext = {
     todos:Todo[];
-    handleAddToDo:(task:string) => void; // call signature
+    handleAddToDo:(task:string) => void; 
     toggleTodoAsCompleted:(id:string) => void; 
     handleDeleteTodo:(id:string) => void;
 }
@@ -41,9 +41,7 @@ export const TodosProvider = ({children}:TodosProviderProps) => {
                 createdAt:new Date()
             },
             ...prev
-          ] 
-        //   console.log("my previous " + prev);          
-        //   console.log(newTodos);       
+          ]      
            localStorage.setItem("todos",JSON.stringify(newTodos))
           return newTodos
         })
@@ -86,11 +84,3 @@ export const useTodos = () => {
     }
     return todosConsumer;
 }
-
-
-// export const useTodos1 =()=>{
-//     const todosConsumer1 = useContext(todosContext);
-//     if(!todosConsumer1){
-// throw new Error("please use todos inside the provider")
-//     }
-// }

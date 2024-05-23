@@ -9,8 +9,6 @@
 }
 
 
-/*// thapa technical SUBSCRIBE*/
-
 html{
     font-size: 62.5%;
 }
@@ -43,9 +41,7 @@ main h2 .icons{
     color: #68B984;
 }
 
-/*===================*/
 /*navbar styling */
-/*====================*/
 
 nav{
     width:55rem ;
@@ -71,9 +67,7 @@ nav a.active {
     border-color: #68B984;
 }
 
-/*===================*/
 /*Form  styling */
-/*====================*/
 
 form input{
     border: .1rem solid #ccc;
@@ -104,9 +98,7 @@ label{
     font-weight: bold;
 }
 
-/*===================*/
 /*todo task list */
-/*====================*/
 
 .main-task li{
     display: grid;
